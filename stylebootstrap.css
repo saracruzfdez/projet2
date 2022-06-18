@@ -1,0 +1,65 @@
+body {
+    font: 100% Helvetica, sans-serif;
+  }
+  body em {
+    font-style: normal;
+    font-weight: bold;
+  }
+  body .header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
+  body .header .header-item {
+    display: flex;
+    gap: 20px;
+    padding: 0px 8px;
+    align-items: center;
+  }
+  body .header .header-item .header-item-image {
+    width: 100px;
+  }
+  body .header .rounded {
+    border: 1px rgb(167, 167, 167) solid;
+    border-radius: 10px;
+  }
+  body .header .icon {
+    width: 30px;
+    height: 30px;
+  }
+  body .menu {
+    display: flex;
+    gap: 30px;
+    border-top: 1px rgb(167, 167, 167) solid;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  body .menu .icon {
+    width: 30px;
+    height: 30px;
+  }
+  body .houses {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  body .houses .photohouse {
+    width: 320px;
+  }
+  body .footer {
+    border-top: 1px rgb(167, 167, 167) solid;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-top: 8px;
+  }
+  body .footer .icon {
+    width: 30px;
+    height: 30px;
+  }
+  body .footer .footer-item {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /*# sourceMappingURL=stylesass.css.map */
