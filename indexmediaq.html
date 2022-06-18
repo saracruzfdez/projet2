@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>locaberre</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Logo, barre recherche, devenez hote et login son dedans le conteneur header.
+            Les differents divs à l'interieur de header sont les enfants de header. -->
+
+        <div class="header-item">
+            <img class="header-item-image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/langfr-280px-Airbnb_Logo_B%C3%A9lo.svg.png"
+                alt="logo header">
+        </div>
+
+        <div class="header-item-barre">
+            <div>
+                <em>N'importe où</em>
+            </div>
+            <div>
+                <em>Une semaine</em>
+            </div>
+            <div>
+                Ajouter des voyageurs
+            </div>
+            <div>
+                <img class="icon"
+                    src="https://icons-for-free.com/download-icon-loupe+magnifying+glass+search+icon-1320196420501324296_256.png"
+                    alt="loupe">
+            </div>
+        </div>
+
+        <div class="header-item-login">
+            <div class="hote">
+                <em>Devenez hôte</em>
+            </div>
+            <div>
+                <img class="icon"
+                    src="data:image/png;base64,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"
+                    alt="monde">
+            </div>
+            <div>
+                <div class="login">
+                    <img class="icon"
+                        src="http://www.resonancecommunication.com/wp-content/uploads/2015/03/menu-burger.png"
+                        alt="menu">
+                    <img class="icon" src="https://cdn-icons-png.flaticon.com/128/1250/1250689.png" alt="logoprofil">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="menu">
+        <!-- bloc icones type de logement -->
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg"
+                alt="icone">
+            <h5>Cabanes</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/c0a24c04-ce1f-490c-833f-987613930eca.jpg"
+                alt="icone">
+            <h5>Camping</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg"
+                alt="icone">
+            <h5>Cabanes</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/35919456-df89-4024-ad50-5fcb7a472df9.jpg"
+                alt="icone">
+            <h5>Roulotte</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg"
+                alt="icone">
+            <h5>Ville</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg"
+                alt="icone">
+            <h5>Ville</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg"
+                alt="icone">
+            <h5>Montagne</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg"
+                alt="icone">
+            <h5>Rivière</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/33dd714a-7b4a-4654-aaf0-f58ea887a688.jpg"
+                alt="icone">
+            <h5>Hostel</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/ca25c7f3-0d1f-432b-9efa-b9f5dc6d8770.jpg"
+                alt="icone">
+            <h5>Surprise</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg"
+                alt="icone">
+            <h5>Ville</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg"
+                alt="icone">
+            <h5>Montagne</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg"
+                alt="icone">
+            <h5>Rivière</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg"
+                alt="icone">
+            <h5>Ville</h5>
+        </div>
+
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg"
+                alt="icone">
+            <h5>Rivière</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/33dd714a-7b4a-4654-aaf0-f58ea887a688.jpg"
+                alt="icone">
+            <h5>Hostel</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/ca25c7f3-0d1f-432b-9efa-b9f5dc6d8770.jpg"
+                alt="icone">
+            <h5>Surprise</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg"
+                alt="icone">
+            <h5>Cabanes</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/c0a24c04-ce1f-490c-833f-987613930eca.jpg"
+                alt="icone">
+            <h5>Camping</h5>
+        </div>
+        <div>
+            <img class="icon" src="https://a0.muscache.com/pictures/35919456-df89-4024-ad50-5fcb7a472df9.jpg"
+                alt="icone">
+            <h5>Roulotte</h5>
+        </div>
+        <div>
+            <button type="button"><em>Filtres</em></button>
+        </div>
+    </div>
+
+    <div class="classement">
+        <h3>Classement par ordre de pertinence</h3>
+    </div>
+
+    <div class="houses">
+        <!-- a partir d'ici ce sont les differents logements proposés -->
+
+        <div class="housesuno">
+            <div class="house">
+                <div class="photohouse rounded">
+                    <img src="https://images.pexels.com/photos/386000/pexels-photo-386000.jpeg" width="300" alt="hotel">
+                </div>
+                <div class="texte">
+                    <div>
+                        <em>Madrid, Espagne</em>
+                    </div>
+                    <div>
+                        Particulier
+                    </div>
+                    <div>
+                        28 sept. - 5 oct.
+                    </div>
+                    <div>
+                        365 euros / nuit
+                    </div>
+                </div>
+            </div>
+
+            <div class="house">
+                <div class="photohouse rounded">
+                    <img src="https://images.pexels.com/photos/3293148/pexels-photo-3293148.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        width="300" alt="hotel">
+                </div>
+                <div class="texte">
+                    <div>
+                        <em>Madrid, Espagne</em>
+                    </div>
+                    <div>
+                        Particulier
+                    </div>
+                    <div>
+                        28 sept. - 5 oct.
+                    </div>
+                    <div>
+                        365 euros / nuit
+                    </div>
+                </div>
+            </div>
+
+            <div class="house">
+                <div class="photohouse rounded">
+                    <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg" width="300"
+                        alt="hotel">
+                </div>
+                <div class="texte">
+                    <div>
+                        <em>Madrid, Espagne</em>
+                    </div>
+                    <div>
+                        Particulier
+                    </div>
+                    <div>
+                        28 sept. - 5 oct.
+                    </div>
+                    <div>
+                        365 euros / nuit
+                    </div>
+                </div>
+            </div>
+
+            <div class="house">
+                <div class="photohouse rounded">
+                    <img src="https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        width="300" alt="hotel">
+                </div>
+                <div class="texte">
+                    <div>
+                        <em>Madrid, Espagne</em>
+                    </div>
+                    <div>
+                        Particulier
+                    </div>
+                    <div>
+                        28 sept. - 5 oct.
+                    </div>
+                    <div>
+                        365 euros / nuit
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="housesdeux">
+            <div class="house">
+                <div class="photohouse rounded">
+                    <img src="https://images.pexels.com/photos/386000/pexels-photo-386000.jpeg" width="300" alt="hotel">
+                </div>
+                <div class="texte">
+                    <div>
+                        <em>Madrid, Espagne</em>
+                    </div>
+                    <div>
+                        Particulier
+                    </div>
+                    <div>
+                        28 sept. - 5 oct.
+                    </div>
+                    <div>
+                        365 euros / nuit
+                    </div>
+                </div>
+            </div>
+
+            <div class="house">
+                <div class="photohouse rounded">
+                    <img src="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&w=800"
+                        width="300" alt="hotel">
+                </div>
+                <div class="texte">
+                    <div>
+                        <em>Madrid, Espagne</em>
+                    </div>
+                    <div>
+                        Particulier
+                    </div>
+                    <div>
+                        28 sept. - 5 oct.
+                    </div>
+                    <div>
+                        365 euros / nuit
+                    </div>
+                </div>
+            </div>
+
+            <div class="house">
+                <div class="photohouse rounded">
+                    <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg" width="300"
+                        alt="hotel">
+                </div>
+                <div class="texte">
+                    <div>
+                        <em>Madrid, Espagne</em>
+                    </div>
+                    <div>
+                        Particulier
+                    </div>
+                    <div>
+                        28 sept. - 5 oct.
+                    </div>
+                    <div>
+                        365 euros / nuit
+                    </div>
+                </div>
+            </div>
+
+            <div class="house">
+                <div class="photohouse rounded">
+                    <img src="https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        width="300" alt="hotel">
+                </div>
+                <div class="texte">
+                    <div>
+                        <em>Madrid, Espagne</em>
+                    </div>
+                    <div>
+                        Particulier
+                    </div>
+                    <div>
+                        28 sept. - 5 oct.
+                    </div>
+                    <div>
+                        365 euros / nuit
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="housestrois">
+            <div class="house">
+                <div class="photohouse rounded">
+                    <img src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&w=800" width="300" alt="hotel">
+                </div>
+                <div class="texte">
+                    <div>
+                        <em>Madrid, Espagne</em>
+                    </div>
+                    <div>
+                        Particulier
+                    </div>
+                    <div>
+                        28 sept. - 5 oct.
+                    </div>
+                    <div>
+                        365 euros / nuit
+                    </div>
+                </div>
+            </div>
+
+            <div class="house">
+                <div class="photohouse rounded">
+                    <img src="https://images.pexels.com/photos/1643389/pexels-photo-1643389.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        width="300" alt="hotel">
+                </div>
+                <div class="texte">
+                    <div>
+                        <em>Madrid, Espagne</em>
+                    </div>
+                    <div>
+                        Particulier
+                    </div>
+                    <div>
+                        28 sept. - 5 oct.
+                    </div>
+                    <div>
+                        365 euros / nuit
+                    </div>
+                </div>
+            </div>
+
+            <div class="house">
+                <div class="photohouse rounded">
+                    <img src="https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg?auto=compress&cs=tinysrgb&w=800" width="300"
+                        alt="hotel">
+                </div>
+                <div class="texte">
+                    <div>
+                        <em>Madrid, Espagne</em>
+                    </div>
+                    <div>
+                        Particulier
+                    </div>
+                    <div>
+                        28 sept. - 5 oct.
+                    </div>
+                    <div>
+                        365 euros / nuit
+                    </div>
+                </div>
+            </div>
+
+            <div class="house">
+                <div class="photohouse rounded">
+                    <img src="https://images.pexels.com/photos/12357684/pexels-photo-12357684.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                        width="300" alt="hotel">
+                </div>
+                <div class="texte">
+                    <div>
+                        <em>Madrid, Espagne</em>
+                    </div>
+                    <div>
+                        Particulier
+                    </div>
+                    <div>
+                        28 sept. - 5 oct.
+                    </div>
+                    <div>
+                        365 euros / nuit
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="footer">
+        <!-- a partir d'ici ce sont les informations dans la partie footer -->
+
+        <div class="footer-item">
+            <div>© 2022 Airbnb, Inc.</div>
+            <div>
+                <a
+                    href="https://www.airbnb.fr/help/article/2855/protection-des-donn%C3%A9es-sur-airbnb">Confidentialité</a>
+            </div>
+            <div>
+                <a href="https://www.airbnb.fr/help/article/2908/conditions-de-service">Conditions générales</a>
+            </div>
+            <div>
+                <a href="https://www.airbnb.fr/sitemaps/v2">Plan du site</a>
+            </div>
+            <div>
+                <a href="https://www.airbnb.fr/fonctionnement_du_site">Fonctionnement du site</a>
+            </div>
+            <div>
+                <a href="https://www.airbnb.fr/about/company-details">Infos sur l'entreprise</a>
+            </div>
+            <div>
+                <a href="https://www.airbnb.fr/ancelle-france/stays">Destinations</a>
+            </div>
+        </div>
+
+        <div class="footer-item">
+            <div>
+                <button id="buttonworld" class="button"><img class="icon"
+                        src="data:image/png;base64,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"
+                        alt="iconeworld" /></button>
+            </div>
+            <div>
+                <em>Français(FR)</em>
+            </div>
+            <div>
+                <em>EUR</em>
+            </div>
+            <div>
+                <em>Assistance et ressources</em>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
